@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+
+<audio id="audioCorrect">
+  <source src="audio/correct.wav" type="audio/wav">
+</audio>
+<audio id="audioWrong">
+  <source src="audio/wrong.wav" type="audio/wav">
+</audio>
+<audio id="audioComplete">
+  <source src="audio/complete.wav" type="audio/wav">
+</audio>
+<audio id="audioLose">
+  <source src="audio/lose.wav" type="audio/wav">
+</audio>
+
+<div class="center">
+  <h1 id="title">
+    HANGMAN
+  </h1>
+</div>
+
+<div id="hangmanpicture" class="center">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/41I%2BvcnXn-L.png">
+</div>
+
+<div id="guesses" class="center">
+  <h1>
+    _ _ _ _ _ _
+  </h1>
+</div>
+
+<div id="guessArea" class="centersmall">
+
+  <h2>
+  Guess the Word
+  </h2>
+  <textarea id="guess" class="center"></textarea>
+  
+  <button id="submit">
+  >
+  </button>
+  
+  <h2> Wrong Guesses </h2>
+  <h2 id="guessed"></h2>
+
+</div>
+
+<div id="congrats" class="center">
+  
+</div>
+
+
+<script src="js.js"></script>
+
+</body>
